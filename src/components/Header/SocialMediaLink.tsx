@@ -7,7 +7,7 @@ interface SocialMediaLinkProps {
 
 
 export const SocialMediaLink = ({link, children}:SocialMediaLinkProps) => {
-    return(<a className="size-10 bg-gray-100 flex items-center justify-center rounded hover:bg-gray-200"
+    return(<a className="w-full bg-gray-100 flex items-center justify-center rounded hover:bg-[#d4a373]"
     href={link}>{children}</a>)
     
 }
