@@ -8,42 +8,12 @@ import { Main } from "./Main";
 
 export { Input } from "./Input"
 
-interface Link {
-    name: string,
-    url: string
-}
+
 
 export const EditPage = () => {
-    const [name, setName] = useState("");
-    const [links, setlinks] = useState<Link[]>([]);
-
-    const [github, setGithub] = useState("");
-    const [linkedin, setLinkedin] = useState("");
-    const [instagram, setInstagram] = useState("");
-    const [tiktok, setTiktok] = useState("");
-    const [facebook, setFacebook] = useState("");
-
-    const handleAddLink = () => {
-        setlinks([...links, { name: "", url: "" }]);
-    }
-
-    const handleLinkChange = (index: number, field: string, value: string) => {
-        const updatedLinks = [...links];
-
-        updatedLinks[index] = {
-            ...updatedLinks[index],
-            [field]: value,
-        };
-
-        setlinks(updatedLinks);
-    }
-
-
     return (
         <div>
-            return (
             <div className="container mx-auto flex py-8 gap-4">
-                {/* Componente de Edição */}
                 <Main
                     name={name} setName={setName}
                     github={github} setGithub={setGithub}
